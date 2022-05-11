@@ -1,0 +1,17 @@
+function calculateBtn() {
+  var distance = document.getElementById('input-1').value
+  var priceFuel = document.getElementById('input-2').value
+  var consumption = document.getElementById('input-3').value
+  var conclusion = (distance / 100) * consumption * priceFuel
+
+  console.log(parseFloat(conclusion).toFixed(2) + ' uah')
+
+  document.getElementById('result').innerHTML =
+    'You need: ' + parseFloat(conclusion).toFixed(2) + ' uah'
+  document.getElementById('result').style.visibility = 'visible'
+}
+
+function clearBtn() {
+  document.getElementById('form').reset()
+  document.getElementById('result').style.visibility = 'hidden'
+}

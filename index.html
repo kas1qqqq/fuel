@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="vh-100 bg-dark text-white d-flex justify-content-center d-flex align-items-center">
+    <div class="form-group">
+      <h1 class="mb-3">Petrol calculation</h1>
+      <form id="form">
+        <label for="input-1">Distance in kilometers</label>
+        <input type="number" class="form-control mb-3" id="input-1" placeholder="0">
+        <label for="input-2">Fuel price per liter</label>
+        <input type="number" class="form-control mb-3" id="input-2" placeholder="0">
+        <label for="input-3">Fuel consumption per 100 kilometers</label>
+        <input type="number" class="form-control mb-3" id="input-3" placeholder="0">
+      </form>
+      <div class="d-flex ">
+        <button onclick="calculateBtn()" type="button" class="btn btn-success w-100 me-2">Calculate</button>
+        <button onclick="clearBtn()" type="button" class="btn btn-danger">Clear</button>
+      </div>
+      <p class="text-center mt-3 fs-3" id="result">&#8205;</p>
+    </div>
+  </div>
+  <script src="./script"></script>
+</body>
+
+</html>
